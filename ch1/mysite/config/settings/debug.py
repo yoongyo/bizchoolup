@@ -15,10 +15,11 @@ DATABASES = {
     }
 }
 
+FRAOLA_EDITOR_THIRD_PARTY = ('image_aviary', 'spell_checker')
 
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'mysite', 'media')
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(ROOT_DIR, 'mysite', 'media')
+FROALA_UPLOAD_PATH = os.path.join(ROOT_DIR, 'mysite', 'media')
 
 MIDDLEWARE += ['django.middleware.security.SecurityMiddleware']
 INTERNAL_IPS = ['127.0.0.1']

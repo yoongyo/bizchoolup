@@ -48,8 +48,6 @@ def post_new(request):
 
 
 def post_edit(request, category, title):
-    foi = Post.objects.all()
-    foi = foi.filter(title=title)
     post1 = get_object_or_404(Post, title=title)
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES, instance=post1)
@@ -61,7 +59,6 @@ def post_edit(request, category, title):
 
     return render(request, 'blog/post_edit.html', {
         'form': form,
-        'post': foi,
     })
 
 

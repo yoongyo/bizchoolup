@@ -1079,7 +1079,10 @@ a.pagination-item:hover {
          {% for category in category_list %}
          <a class="sidebar-nav-item" href="{% url 'blog:post_list' category %}">{{ category }}</a>
          {% endfor %}
+         {% if user.is_authenticated %}
          <a class="sidebar-nav-item" href="{% url 'blog:post_new' %}">Post</a>
+         <a class="sidebar-nav-item" href="{% url 'blog:post_edit' post_detail.category post_detail.title %}">Edit</a>
+         {% endif %}
        </nav>
 
        <div class="sidebar-item">

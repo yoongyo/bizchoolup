@@ -41,6 +41,7 @@
 <script type="text/javascript" src="{% static 'js/plugins/entities.min.js' %}"></script>
 
 <script type="text/javascript" src="{% static 'js/plugins/file.min.js' %}"></script>
+<link href="{% static 'css/plugins/file.min.css' %}" type="text/css" media="all" rel="stylesheet" />
 
 
 <script type="text/javascript" src="{% static 'js/plugins/font_family.min.js' %}"></script>
@@ -63,11 +64,11 @@
 <script type="text/javascript" src="{% static 'js/plugins/inline_style.min.js' %}"></script>
 
 
-
-<script type="text/javascript" src="{% static 'js/third_party/image_aviary.min.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/plugins/image.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'froala_editor/js/plugins/image.min.js' %}"></script>
 <link href="{% static 'css/plugins/image.min.css' %}" type="text/css" media="all" rel="stylesheet" />
+
+<script type="text/javascript" src="{% static 'froala_editor/js/third_party/image_aviary.min.js' %}"></script>
+
 <script type="text/javascript" src="{% static 'js/plugins/help.min.js' %}"></script>
 <link href="{% static 'css/plugins/help.min.css' %}" type="text/css" media="all" rel="stylesheet" />
 
@@ -122,4 +123,5 @@
     <br/>
     <button type="submit">작성</button>
 </form>
+
 {% endblock %}
