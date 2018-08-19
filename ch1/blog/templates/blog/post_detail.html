@@ -1114,9 +1114,13 @@ a.pagination-item:hover {
         </div>
       </div>
     </div>
-
+     <br>
+    <div>
+    {% load disqus_tags %}
+    {% disqus_show_comments %}
+    </div>
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
+    <br/>
     <script>
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');

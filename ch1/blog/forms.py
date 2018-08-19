@@ -5,9 +5,9 @@ from froala_editor.widgets import FroalaEditor
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['category','title', 'content']
+        fields = ['category', 'title', 'content']
         widgets = {
-            'content': FroalaEditor,
+            'content': FroalaEditor(),
             'category': forms.Select(
                 attrs={
                     'style': 'height: 30px; margin-bottom:15px; width:150px;',

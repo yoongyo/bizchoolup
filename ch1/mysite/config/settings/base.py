@@ -29,8 +29,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'markdown_deux',
     'froala_editor',
+    'disqus',
+    'django.contrib.sites'
 ]
 
 
@@ -92,6 +93,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+FROALA_INCLUDE_JQUERY = False
 
+FROALA_EDITOR_PLUGINS = ('align', 'char_counter', 'code_beautifier' ,'code_view', 'colors', 'draggable', 'emoticons',
+        'entities', 'file', 'font_family', 'font_size', 'fullscreen', 'image_manager', 'image', 'inline_style',
+        'line_breaker', 'link', 'lists', 'paragraph_format', 'paragraph_style', 'quick_insert', 'quote', 'save', 'table',
+        'url', 'video')
 
-
+DISQUS_API_KEY = 'Anhx7ZcER9hRNIcGwdrhzlEFyFG2u2eXAqsM4CJFB2AbQJuWo0qhW9aiSsoFlqSe'
+DISQUS_WEBSITE_SHORTNAME = 'bizblog-1'
+SITE_ID = 1
