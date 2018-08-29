@@ -15,9 +15,8 @@ DATABASES = {
     }
 }
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/image_upload/'
 MEDIA_ROOT = os.path.join(ROOT_DIR, 'mysite', 'media')
-FILE_UPLOAD_PATH = os.path.join(MEDIA_ROOT, 'uploads/')
 
 
 MIDDLEWARE += ['django.middleware.security.SecurityMiddleware']
@@ -29,3 +28,5 @@ STATICFILES_DIRS = [
  os.path.join(ROOT_DIR, 'mysite', 'froala_editor'),
 ]
 STATIC_ROOT = os.path.join(ROOT_DIR, 'mysite', 'staticfiles')
+
+FROALA_UPLOAD_PATH = ''
